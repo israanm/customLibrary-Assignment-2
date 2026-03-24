@@ -1,80 +1,117 @@
+:root {
+    --primarycolor: rgb(244, 98, 58);
 
-.hero{
-    
+}
 
+/*************************hero section********************************/
+.hero {
     background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url(../img/bg-masthead.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: cover;
-  
 }
+
 h1::after {
     content: "";
     position: absolute;
     bottom: -20px;
-    width: 5.5%;
-    height: 2px;
-    background-color: #ff5722;
-   left:47%;
+    width: 60px;
+    height: 3px;
+    background-color: var(--primarycolor);
+    left: calc(50% - 30px);
 }
-@media screen and (max-width:992px) {
-.nav ul{
-display: none;
-}
-.nav .icon-alt{
-    display: inline-block;
 
+@media screen and (max-width:992px) {
+    .nav ul {
+        display: none;
+    }
+
+    .nav .icon-alt {
+        display: inline-block;
+
+    }
+
+    .navbar {
+        background-color: white;
+    }
+
+    .nav .logo {
+        color: black;
+    }
 }
-.navbar{
-    background-color: white;
-}
-.nav .logo{
-    color: black;
-}
-}
+
 @media screen and (max-width:880px) {
-    .nav{
+    .nav {
         padding: 5px;
     }
-.hero .content .info{
-max-width: 650px;
+
+    .hero .content .info {
+        max-width: 650px;
+    }
+
+    .hero .content h1 {
+        font-size: 50px;
+        margin-top: 30px;
+    }
+
+    .hero .content p {
+        font-size: 20px;
+    }
 }
-.hero .content h1{
-    font-size: 50px;
-    margin-top: 30px;
-}
-.hero .content p{
-    font-size: 20px;
-}
-}
+
 @media screen and (max-width:680px) {
-    .hero .content{
+    .hero .content {
         margin-top: 15px;
     }
-.hero .content .info{
-max-width: 450px;
-gap: 15px;
-}
+
+    .hero .content .info {
+        max-width: 450px;
+        gap: 15px;
+    }
 
 }
+
 @media screen and (max-width:460px) {
-.hero .content .info{
-max-width: 300px;
+    .hero .content .info {
+        max-width: 300px;
 
+    }
+
+    .hero .content h1 {
+        font-size: 40px;
+    }
 }
-.hero .content h1{
-    font-size: 40px;
-}}
 
 @media screen and (max-width:310px) {
-.hero .content .info{
-max-width: 250px;
-gap:5px;
-}
-.hero .content h1{
-    font-size: 35px;
-}
+    .hero .content .info {
+        max-width: 250px;
+        gap: 5px;
+    }
+
+    .hero .content h1 {
+        font-size: 35px;
+    }
 
 
 }
+
+/****************************about section***********************************************/
+h2::after {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    width: 60px;
+    height: 3px;
+    background-color: #ffff;
+    left: calc(50% - 30px);
+}
+
+@media screen and (max-width:680px) {
+    .about .content {
+        width: 85%;
+    }
+
+}
+
+/***********************************services*************************************************************/
