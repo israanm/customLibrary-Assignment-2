@@ -40,7 +40,7 @@ h1::after {
         color: black;
     }
     /*************services****************/
-    
+
 }
 
 @media screen and (max-width:880px) {
@@ -127,4 +127,20 @@ h2::after {
     background-color: var(--primarycolor);
     left: calc(50% - 30px);
     
+}
+
+
+@media screen and (max-width:767px) {
+   .services-box{
+        gap: calc(var(--spacer) * 12);
+        grid-template-columns: repeat(1, 1fr);
+    }
+   }
+.filter{
+    position: relative;
+}
+.filter::after{
+    content: "categ";
+    inset: 0;
+
 }
