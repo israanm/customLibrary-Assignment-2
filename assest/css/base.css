@@ -410,6 +410,18 @@ img {
 
 }
 
+.d-block {
+    display: block;
+}
+
+.d-inline {
+    display: inline;
+}
+
+.d-inline-block {
+    display: inline-block;
+}
+
 /*flex*/
 .d-flex {
     display: flex;
@@ -812,7 +824,7 @@ fs-xsm {
     transition: opacity 0.20s;
 }
 
-.btn:hover {
+.btn-rounded:hover {
     opacity: 70%;
 }
 
@@ -884,4 +896,13 @@ fs-xsm {
 
 .card-img:hover .card-img-overlay {
     opacity: 0.9;
+}
+
+.best-centering {
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--spacer) * 2);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
