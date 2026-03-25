@@ -3,23 +3,34 @@
 
 }
 
-/*************************hero section********************************/
 .hero {
-    background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url(../img/bg-masthead.jpg);
+    background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url(../img/bg-masthead.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: cover;
 }
 
-h1::after {
+.service h2::after,
+h1::after,
+.about h2::after,
+.contact h2::after {
     content: "";
     position: absolute;
     bottom: -20px;
     width: 60px;
     height: 3px;
-    background-color: var(--primarycolor);
     left: calc(50% - 30px);
+}
+
+.service h2::after,
+h1::after,
+.contact h2::after {
+    background-color: var(--primarycolor);
+}
+
+.about h2::after {
+    background-color: #ffff;
 }
 
 @media screen and (max-width:992px) {
@@ -39,7 +50,6 @@ h1::after {
     .nav .logo {
         color: black;
     }
-    /*************services****************/
 
 }
 
@@ -72,6 +82,9 @@ h1::after {
         gap: 15px;
     }
 
+    .about .content {
+        width: 85%;
+    }
 }
 
 @media screen and (max-width:460px) {
@@ -98,49 +111,9 @@ h1::after {
 
 }
 
-/****************************about section***********************************************/
-h2::after {
-    content: "";
-    position: absolute;
-    bottom: -20px;
-    width: 60px;
-    height: 3px;
-    background-color: #ffff;
-    left: calc(50% - 30px);
-    
-}
-
-@media screen and (max-width:680px) {
-    .about .content {
-        width: 85%;
-    }
-
-}
-
-/***********************************services*************************************************************/
-h2::after {
-    content: "";
-    position: absolute;
-    bottom: -20px;
-    width: 60px;
-    height: 3px;
-    background-color: var(--primarycolor);
-    left: calc(50% - 30px);
-    
-}
-
-
 @media screen and (max-width:767px) {
-   .services-box{
+    .services-box {
         gap: calc(var(--spacer) * 12);
         grid-template-columns: repeat(1, 1fr);
     }
-   }
-.filter{
-    position: relative;
-}
-.filter::after{
-    content: "categ";
-    inset: 0;
-
 }
